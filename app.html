@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project by Faisal Hossain</title>
+    <title>Rewind: A Coding Project by Faisal Hossain</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,9 +12,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
    <!-- Convert this to an external style sheet -->
-   <style>
-      
-   </style>
+
 
    <link href="/css/site.css" rel="stylesheet">
 
@@ -27,7 +25,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">APP NAME</a>
+            <a class="navbar-brand" href="#">Rewind</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,7 +54,41 @@
 
     <main class="flex-shrink-0">
 
-        <div class="container"></div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col mt-5">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 text-dark">Rewind: A Coding Project</h1>
+                    <h4 class="lead text-dark">There and back again. A javascrip coding excersize using arrays. Write a program that displays the string in reverse.</h5>
+                </div>
+
+                <div class="col mt-5">
+                    <h5 class="fw-bold text-dark border-bottom">Enter a string to Reverse</h5>
+
+                    <form class="row gx-3 gy-2">
+                        
+                        <div class="col">
+                            <input id="reverseMe" type="text" class="form-control" placeholder="Enter in a string" aria-label="Enter a string">
+                        </div>
+
+                        <div class="col-12">
+                            <button id="btnSubmit" type="button" class="btn bg-danger btn-large text-light mt-2">Reverse String</button>
+                        </div>
+
+                    </form>
+
+
+                    <div class="alert alert-danger mt-5 invisible fade show" id="alert" role="alert">
+                        <h4 class="alert-heading"> Your string has been reversed</h4>
+                        <hr>
+
+                        <p class="mb-0" id="msg"> 
+                            
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
 
     </main>
 
@@ -75,6 +107,8 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
     <script src="/js/site.js"></script>
-
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getValue);
+    </script>
 </body>
 </html>
